@@ -5,4 +5,6 @@ RUN apk add --update \
     openssh-client \
   && rm -rf /var/cache/apk/*
 
-COPY deployrpms.sh /deployrpms.sh
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT "/entrypoint.sh"
