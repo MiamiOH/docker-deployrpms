@@ -45,7 +45,7 @@ for YUM_SERVER in "${YUM_SERVERS[@]}"; do
     exit 1
   fi
 
-  scp -o StrictHostKeyChecking=no -i "${PWD}/id_rsa" "${SOURCE_PATH}" "${DEPLOY_USER}@${YUM_SERVER}:${DEPLOY_PATH}"
+  scp -o StrictHostKeyChecking=no -i "${PWD}/id_rsa" $SOURCE_PATH "${DEPLOY_USER}@${YUM_SERVER}:${DEPLOY_PATH}"
   echo ""
 done
 
