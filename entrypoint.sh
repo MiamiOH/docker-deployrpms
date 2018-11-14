@@ -22,7 +22,7 @@ vagrant|esodev|esotst)
   YUM_SERVERS=(
     "uitlyumt01.mcs.miamioh.edu"
   ) ;;
-development|test|production)
+development|test|production|operations|shared_services)
   YUM_SERVERS=(
     "uitlyump01.mcs.miamioh.edu"
   ) ;;
